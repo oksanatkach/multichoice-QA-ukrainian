@@ -17,4 +17,4 @@ learning_rate=5e-5
 num_train_epochs=3
 weight_decay=0.01`
 
-<img url='images/model_res_1.png', width=200 />
+<img src="images/model_res_1.png" alt="model_res_1" width="200"/>
