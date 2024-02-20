@@ -25,5 +25,5 @@ mixed data (history and language/literature)
 
 <img src="images/model_res_1.png" alt="model_res_1" width="600"/>
 
-2. Same model, split the data into subjects (only trained on language/literature questions). Started to slowly converge.
+2. Same model, split the data into subjects (only trained on language/literature questions). Started to converge somewhat, then immediately overfits -- this is a good starting place.
 <img src="images/model_res_2.png" alt="model_res_2" width="600"/>
