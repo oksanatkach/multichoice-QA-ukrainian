@@ -11,10 +11,10 @@ https://colab.research.google.com/drive/16HNLUrWuXs32XCh6FTOTZYUo4xNGII15?usp=sh
 Data: [zno.train.jsonl](https://github.com/unlp-workshop/unlp-2024-shared-task/blob/b21cfa4e7d004e0d3129065c2ffe18b275690458/data/zno.train.jsonl)<br/>
 Models tried:
 1. [google-bert/bert-base-multilingual-cased](https://huggingface.co/google-bert/bert-base-multilingual-cased)<br/>
-`BATCH_SIZE=2
-gradient_accumulation_steps=8
-learning_rate=5e-5
-num_train_epochs=3
+`BATCH_SIZE=2<br/>
+gradient_accumulation_steps=8<br/>
+learning_rate=5e-5<br/>
+num_train_epochs=3<br/>
 weight_decay=0.01`
 
 <img src="images/model_res_1.png" alt="model_res_1" width="600"/>
