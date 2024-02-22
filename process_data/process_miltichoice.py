@@ -27,7 +27,7 @@ def preprocess_line(data_line):
     return context, possible_responses, label
 
 
-def main_process_data(data_path, zno_train_file, MODEL_NAME):
+def main_process_data(data_path, zno_train_file, subject, MODEL_NAME):
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     def custom_tokenize(data_line):
@@ -47,7 +47,7 @@ def main_process_data(data_path, zno_train_file, MODEL_NAME):
 
     for str_line in data:
       data_line = json.loads(str_line)
-      if fits_format(data_line, 'ukrainian-language-and-literature'):
+      if fits_format(data_line, subject):
         context, possible_responses, label = preprocess_line(data_line)
         contexts.append(context)
         responses.append(possible_responses)
