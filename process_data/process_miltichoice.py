@@ -27,7 +27,7 @@ def preprocess_line(data_line):
     return context, possible_responses, label
 
 
-def main_process_data(data_path, zno_train_file, tokenizer, MODEL_NAME):
+def main_process_data(data_path, zno_train_file, MODEL_NAME):
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     def custom_tokenize(data_line):
