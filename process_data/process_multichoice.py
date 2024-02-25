@@ -20,8 +20,8 @@ def fits_format(data_line, subject):
 
 
 def preprocess_line(data_line):
-    context = data_line['question'].replace('\xa0', '')
-    possible_responses = [el['text'].replace('\xa0', '') for el in data_line['answers']]
+    context = data_line['question'].replace('\xa0', ' ')
+    possible_responses = [el['text'].replace('\xa0', ' ') for el in data_line['answers']]
     label = letter2ind[data_line['correct_answers'][0]]
 
     return context, possible_responses, label
